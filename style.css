@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+html, body {
+    position: fixed;
+    background-color: rgb(53, 145, 116);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 10vh;
+    width: 100%;
+    text-align: center;
+    color: cornsilk;
+    font: 8vh 'Amatic SC'; 
+}
+
+img {
+    position: fixed;
+    right: 0;
+    height: 20vh;
+    text-align: center;
+}
+
+button {
+    background-color: blueviolet;
+    position: fixed;
+    width: 16vh;
+    height: 10vh;
+    border: 2px blueviolet solid;
+    border-radius: 50%;
+    margin-top: 40vh;
+    right: calc(50vw - 8vh);
+    font: 3.5vh 'Indie Flower';
+    font-weight: 200;
+    color: white;
+}
+
+#lots-container {
+    position: relative;
+    margin: 60vh auto;
+    border: 2px gold outset;
+    border-radius: 5%;
+    background-color: darkblue;
+    color: wheat;
+    width: 30vh;
+    height: 30vh;
+    overflow: hidden;
+    font-family: 'Lobster Two';
+}
+
+#reel {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    margin-left: -570vh;
+    height: 100%;
+    width: 600vh;
+}
+
+.num {
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+    font-size: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes roll {
+    100%{
+        margin-left: 0;
+    }
+}
+
+@keyframes pushed {
+    50%{
+        background-color: red;
+        font-size: 4vh;
+    }
+    100%{
+        background-color: blueviolet;
+        font-size: 3.5vh;
+    }
+}
